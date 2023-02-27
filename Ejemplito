@@ -1,0 +1,48 @@
+"""
+accion_ir = input("Fué al evento?: ")
+accion_registro = input("Se Registro anteriormente?: ")
+if (accion_ir == 'Si'):
+    print("Si fue al evento")
+    if (accion_registro == "Si"):
+        print("Puede verificar su edad")
+        if (accion_registro == "Si"):
+            print("Puede verificar su edad")
+        else:
+            print("No puede ingresar ya que no se ha registrado anteriormente")
+    else:
+        print("No puede ingresar")
+else:
+    print("No fuiste bro")
+"""
+#Salida = exit("No pudiste seguir el curso del evento")
+    
+#print(accion_ir)no
+
+
+boleta = ""
+
+while boleta == "":
+    Precio_Localidad = int(input("Que boleta desea comprar?\nVIP = $500\nBoleta Preferencial = $400\nBoleta General = $200\nBoleta Baja = $100\n"))
+    if Precio_Localidad == 500:
+        print("Has comprado la Boleta VIP")
+        boleta = "VIP"
+        break
+    elif Precio_Localidad ==400:
+        print("Has comprado la Boleta Preferencial")
+        boleta = "Preferencial"
+        break
+    elif Precio_Localidad ==200:
+        print("Has comprado la Boleta General")
+        boleta = "General"
+        break
+    elif Precio_Localidad ==100:
+        print("Has comprado la Boleta Baja")
+        boleta = "Baja"
+        break
+    else:
+        print("\nDigitaste un valor invalido, intentalo de nuevo\n")
+    
+
+
+
+
