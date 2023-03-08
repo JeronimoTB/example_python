@@ -19,7 +19,7 @@ while ciclo == 0:
     elif monedasO == 5:
         saldoPeso = 919 * cantidad
 
-    monedasF = int(input("A que moneda desea convertir?\n1. Dolar\n2.Euro\n3.Peso Colombiano\n4.Dolar Canadiense\n5.Real\n"))
+    monedasF = int(input("A que moneda desea convertir?\n1.ñDolar\n2.Euro\n3.Peso Colombiano\n4.Dolar Canadiense\n5.Real\n"))
     if monedasO == monedasF:
         print("Usted no puede intercambiar por la misma moneda")
     elif monedasO < 1 or monedasF> 5 or monedasO>5 or monedasF<1:

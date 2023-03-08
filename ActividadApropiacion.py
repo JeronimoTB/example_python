@@ -1,4 +1,6 @@
 '''
+#VARIABLES
+
 #Cajero Electronico
 SaldoCajero= 500000
 SaldoCuenta = 120000
@@ -44,7 +46,7 @@ ModeloTelefono = "Motorola E20"
 ValorRecarga = 3000
 '''
 
-
+"""
 Almacen_WC = {
     "Articulo" : "Precio",
     "Zapatos" : 350000,
@@ -53,6 +55,9 @@ Almacen_WC = {
     "Jeans" : 200000
 
 }
+
+#CASO 1 - ALMACEN WC 
+
 #Muestra en la consola los artículos y precios actuales
 print(Almacen_WC)
 
@@ -75,3 +80,31 @@ print("El nuevo precio de los Jeans es $",int(Almacen_WC["Jeans"]+ TasaSubida))
 
 TasaDisminuida = int(Almacen_WC["Zapatos"] * 0.008)
 print("El nuevo precio de los Zapatos es $",int(Almacen_WC["Zapatos"] - TasaDisminuida))
+
+"""
+
+
+#CASO 2 EMPRESA WC
+
+proyecto = input("Qué proyecto trabaja?\n")
+if proyecto == "A":
+    proyecto = 20000
+elif proyecto == "B":
+    proyecto = 10000
+else:
+    proyecto = 5000
+
+
+#Valor de la hora del día
+print("El valor de la hora por día es de ", proyecto)
+
+#Sueldo Mensual
+SueldoMen = (proyecto*8)*30
+print("Su sueldo mensualmente es de ",SueldoMen)
+
+if SueldoMen > 1500000:
+    print("Su salario es mayor al tope")
+else:
+    Extrahora = (proyecto*0.06) + proyecto
+    SueldoMen = SueldoMen + (Extrahora*3)
+    print("Su nuevo salario con las horas extras es de ",int(SueldoMen))
